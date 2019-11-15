@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="com.tingyu.springcloud.mapper.DepartmentMapper">
+
+	<insert id="save" parameterType="department">
+		INSERT INTO
+		tbl_department(dept_name,db_source)VALUES(#{deptName},DATABASE());
+	</insert>
+	<select id="findAll"
+		resultType="com.tingyu.springcloud.entity.Department">
+		SELECT id,dept_name,db_source FROM tbl_department
+	</select>
+
+	<select id="findById" parameterType="int"
+		resultType="com.tingyu.springcloud.entity.Department">
+		SELECT id,dept_name,db_source FROM tbl_department where id = #{id}
+	</select>
+</mapper>

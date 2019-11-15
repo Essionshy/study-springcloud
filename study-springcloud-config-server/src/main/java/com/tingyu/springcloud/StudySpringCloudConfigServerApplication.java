@@ -9,6 +9,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * @author Essionshy
  *
  */
+
 @EnableConfigServer
 @SpringBootApplication
 public class StudySpringCloudConfigServerApplication {

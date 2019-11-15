@@ -107,5 +107,8 @@
 		<module>study-springcloud-zuul-gateway-9527</module>
 		<module>study-springcloud-consumer-hystrix-dashboard</module>
 		<module>study-springcloud-config-server</module>
+		<module>study-springcloud-config-client</module>
+		<module>study-springcloud-eureka-config-client-7001</module>
+		<module>study-springcloud-provider-config-client-8001</module>
 	</modules>
 </project>

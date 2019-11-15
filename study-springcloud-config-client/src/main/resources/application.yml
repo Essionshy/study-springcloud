@@ -1,0 +1,3 @@
+spring: 
+  application: 
+    name: study-springcloud-config-client
