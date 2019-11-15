@@ -1,0 +1,12 @@
+server: 
+  port: 3344
+
+spring:
+  application: 
+    name: study-springcloud-config
+  cloud: 
+    config: 
+      server: 
+        git: 
+          uri: git@github.com:Essionshy/microservice-config.git
+             

@@ -1,0 +1,33 @@
+server:
+   port: 8000
+mybatis:
+   config-location: classpath:mybatis/mybatis.cfg.xml 
+   mapper-locations: mybatis/mapper/**/*Mapper.xml 
+   type-aliases-package: com.tingyu.springcloud.entity
+spring:
+   application:
+      name: study-springcloud-provider
+   datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/springcloud_01?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+      username: root
+      password: root-xz
+      dbcp2:
+         min-idle: 5
+         initial-size: 5
+         max-total: 5
+         max-wait-millis: 200
+eureka:
+   client:
+      service-url:
+         defaultZone: http://localhost:8761/eureka/
+   instance:
+      instance-id: springcloud-provider-8000  
+      prefer-ip-address: true    
+info: 
+   my.id: 10001
+   app.name: springcloud-provider
+   company.name: www.tingyu.com
+   build.artifactId: study-springcloud-provider
+   build.version: 0.0.1-SNAPSHOT       
