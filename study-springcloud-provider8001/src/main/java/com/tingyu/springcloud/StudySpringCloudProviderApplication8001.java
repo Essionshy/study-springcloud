@@ -6,19 +6,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
- * Provider主启动类
- * 1.导入pom依赖
+ * 
+ * 1、多实例下的微服务提供者，端口 8001
  * 
  * @author Essionshy
  *
  */
-@EnableEurekaClient  //
+@EnableEurekaClient
 @SpringBootApplication
 @MapperScan(value = "com.tingyu.springcloud.mapper")
 public class StudySpringCloudProviderApplication8001 {
 	public static void main(String[] args) {
-
 		SpringApplication.run(StudySpringCloudProviderApplication8001.class, args);
-
 	}
 }

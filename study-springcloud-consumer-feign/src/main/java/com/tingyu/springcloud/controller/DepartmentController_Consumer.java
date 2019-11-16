@@ -22,7 +22,7 @@ public class DepartmentController_Consumer {
 	@Autowired
 	private DepartmentClientService deptService;
 
-	@RequestMapping(value = "/consumer/dept/add", method = RequestMethod.GET)
+	@RequestMapping(value = "/consumer/dept/add", method = RequestMethod.POST)
 	public boolean add(Department department) {
 		return deptService.save(department);
 	}
@@ -32,7 +32,6 @@ public class DepartmentController_Consumer {
 		return deptService.get(id);
 	}
 	
-	@SuppressWarnings("unchecked")
 	@RequestMapping(value="/consumer/dept/list",method=RequestMethod.GET)
 	public List<Department> list() {
 		

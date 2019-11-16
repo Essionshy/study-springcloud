@@ -9,8 +9,10 @@ import com.tingyu.springcloud.service.DepartmentClientService;
 
 import feign.hystrix.FallbackFactory;
 /**
- * 服务降级处理，将请求超时或者出现无法处理的异常进行降级处理
- * 通过FallbackFactory接口将服务熔断@HystrixCommand()从业务方法中解耦，
+ * 1、服务降级处理，将请求超时或者出现无法处理的异常进行降级处理
+ * 2、通过FallbackFactory接口将服务熔断@HystrixCommand()从业务方法中解耦
+ * 3、与spring aop 类似，相当于异常通知
+ *
  * @author Essionshy
  *
  */

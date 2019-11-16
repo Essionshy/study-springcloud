@@ -17,7 +17,7 @@ import com.tingyu.springcloud.factory.DepartmentClientServiceFallbackFactory;
 @FeignClient(value="STUDY-SPRINGCLOUD-PROVIDER",fallbackFactory =DepartmentClientServiceFallbackFactory.class )
 public interface DepartmentClientService {
 
-	@RequestMapping(value = "/dept/add", method = RequestMethod.GET)
+	@RequestMapping(value = "/dept/add", method = RequestMethod.POST)
 	public boolean save(Department department);
 
 	@RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)

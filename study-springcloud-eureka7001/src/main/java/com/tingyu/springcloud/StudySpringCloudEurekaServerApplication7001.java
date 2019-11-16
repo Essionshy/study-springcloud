@@ -4,12 +4,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
- * 
+ * 1、Eureka集群环境下的Eureka服务，端口 7001
  * @author Essionshy
  *
  */
 @SpringBootApplication
-@EnableEurekaServer //开启Eureka 
+@EnableEurekaServer 
 public class StudySpringCloudEurekaServerApplication7001 {
 
 	public static void main(String[] args) {

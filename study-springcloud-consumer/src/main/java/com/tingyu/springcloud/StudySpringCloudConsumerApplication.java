@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
- * RestTemplate+Ribbon模式
+ * 1、RestTemplate+Ribbon模式
  * @author Essionshy
  *
  */

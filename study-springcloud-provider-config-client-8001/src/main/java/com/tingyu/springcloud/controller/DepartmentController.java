@@ -21,18 +21,18 @@ public class DepartmentController {
 
 	@Autowired
 	private DepartmentService departmentService;
-	//@PostMapping
-	@RequestMapping(value="/dept/add",method=RequestMethod.GET)
+
+	@RequestMapping(value = "/dept/add", method = RequestMethod.GET)
 	public boolean save(Department department) {
 		return departmentService.save(department);
 	}
-	
-	@RequestMapping(value="/dept/get/{id}",method=RequestMethod.GET)
-	public Department get(@PathVariable("id")Integer id) {
+
+	@RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
+	public Department get(@PathVariable("id") Integer id) {
 		return departmentService.get(id);
 	}
-	
-	@RequestMapping(value="/dept/list",method=RequestMethod.GET)
+
+	@RequestMapping(value = "/dept/list", method = RequestMethod.GET)
 	public List<Department> list() {
 		return departmentService.list();
 	}
